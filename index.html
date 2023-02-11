@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    
+    
+<head>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P27B3SF7PC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P27B3SF7PC');
+</script>    
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>nemu</title>
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> 
+</head>
+
+    
+<body>
+    
+    <div class="snslink">
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-twitter"></i>
+           <a href="https://twitter.com/MilaShirayuki" target="_blank"><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-youtube"></i>
+           <a href="https://www.youtube.com/@milashirayuki/featured" target="_blank"><i class="fab fa-youtube fa-stack-1x"></i></a>
+        </span>  
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-trash"></i>
+           <i class="far fa-trash-alt fa-stack-1x fa-inverse" onclick="ConfirmAlert()"></i>
+        </span> 
+        
+        <span class="fa-stack fa-2x fa-lg" onclick="scrolltop()">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <i class="fas fas fa-chevron-up fa-stack-1x fa-inverse"></i>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg" onclick="scrollunder()">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <i class="fas fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+        </span>
+        
+    </div>
+    
+    
+    <div class ="favorite">
+       <input type="checkbox" class="favorite-checkbox" id="favorite" onclick="FavoriteCheck()" >
+       <label class="c-text-favorite" for="favorite-checkbox">お気に入り</label>
+    </div>
+    
+    
+    <div class="form">
+      <input type="search" inputmode="search" class="select4" id="select4" placeholder="曲名を入力" onchange="SelectCheck()">
+    </div>
+    
+    
+    <div class ="select">
+       <label class="c-text-select">歌手名</label>
+       <select id="select3" class="select3" onchange="SelectCheck()">
+          <option value="none">選択なし</option>
+                  <option value="R Sound Design">R Sound Design</option>
+                  <option value="相川七瀬">相川七瀬</option>
+                  <option value="aiko">aiko</option>
+                  <option value="亜沙">亜沙</option>
+                  <option value="Ado">Ado</option>
+                  <option value="Ayase">Ayase</option>
+                  <option value="阿良々木月火(井口裕香)">阿良々木月火(井口裕香)</option>
+                  <option value="EasyPop">EasyPop</option>
+                  <option value="いきものがかり">いきものがかり</option>
+                  <option value="石田よう子">石田よう子</option>
+                  <option value="Eve">Eve</option>
+                  <option value="岩崎良美">岩崎良美</option>
+                  <option value="歌組雪月花">歌組雪月花</option>
+                  <option value="宇多田ヒカル">宇多田ヒカル</option>
+                  <option value="Aimer">Aimer</option>
+                  <option value="奥華子">奥華子</option>
+                  <option value="Orangestar">Orangestar</option>
+                  <option value="陰陽座">陰陽座</option>
+                  <option value="Kai">Kai</option>
+                  <option value="かいりきベア">かいりきベア</option>
+                  <option value="香椎モイミ">香椎モイミ</option>
+                  <option value="KANA-BOON">KANA-BOON</option>
+                  <option value="Kanaria">Kanaria</option>
+                  <option value="XX:me">XX:me</option>
+                  <option value="Goose house">Goose house</option>
+                  <option value="グミ">グミ</option>
+                  <option value="ClariS">ClariS</option>
+                  <option value="kemu">kemu</option>
+                  <option value="欅坂46">欅坂46</option>
+                  <option value="小比類巻かほる">小比類巻かほる</option>
+                  <option value="才歌">才歌</option>
+                  <option value="坂本真綾">坂本真綾</option>
+                  <option value="サスケ">サスケ</option>
+                  <option value="ZAQ">ZAQ</option>
+                  <option value="See-Saw">See-Saw</option>
+                  <option value="椎名林檎">椎名林檎</option>
+                  <option value="シェリル・ノーム starring May'n,ランカ・リー=中島愛">シェリル・ノーム starring May&#39;n,ランカ・リー=中島愛</option>
+                  <option value="Junky">Junky</option>
+                  <option value="JUDY AND MARY">JUDY AND MARY</option>
+                  <option value="syudou">syudou</option>
+                  <option value="supercell">supercell</option>
+                  <option value="スキマスイッチ">スキマスイッチ</option>
+                  <option value="Starlet">Starlet</option>
+                  <option value="すりぃ">すりぃ</option>
+                  <option value="SEKAI NO OWARI">SEKAI NO OWARI</option>
+                  <option value="千石撫子(花澤香菜)">千石撫子(花澤香菜)</option>
+                  <option value="戦場ヶ原ひたぎ(斎藤千和)">戦場ヶ原ひたぎ(斎藤千和)</option>
+                  <option value="ZOC">ZOC</option>
+                  <option value="高橋洋子">高橋洋子</option>
+                  <option value="瀧川ありさ">瀧川ありさ</option>
+                  <option value="田村ゆかり">田村ゆかり</option>
+                  <option value="CHiCO with HoneyWorks">CHiCO with HoneyWorks</option>
+                  <option value="Chinozo">Chinozo</option>
+                  <option value="千綿ヒデノリ">千綿ヒデノリ</option>
+                  <option value="ツミキ">ツミキ</option>
+                  <option value="つじあやの">つじあやの</option>
+                  <option value="TM NETWORK">TM NETWORK</option>
+                  <option value="TK from 凛として時雨">TK from 凛として時雨</option>
+                  <option value="DECO*27">DECO*27</option>
+                  <option value="doriko">doriko</option>
+                  <option value="中島愛">中島愛</option>
+                  <option value="ナナホシ管弦楽団">ナナホシ管弦楽団</option>
+                  <option value="ナナヲアカリ">ナナヲアカリ</option>
+                  <option value="nano.RIPE">nano.RIPE</option>
+                  <option value="音莉飴">音莉飴</option>
+                  <option value="BAAD">BAAD</option>
+                  <option value="ハチ">ハチ</option>
+                  <option value="HoneyWorks">HoneyWorks</option>
+                  <option value="羽川翼(堀江由衣)">羽川翼(堀江由衣)</option>
+                  <option value="バルーン">バルーン</option>
+                  <option value="P丸様。">P丸様。</option>
+                  <option value="柊キライ">柊キライ</option>
+                  <option value="日向電工">日向電工</option>
+                  <option value="ピノキオピー">ピノキオピー</option>
+                  <option value="BiBi">BiBi</option>
+                  <option value="Billie Eilish">Billie Eilish</option>
+                  <option value="広瀬香美">広瀬香美</option>
+                  <option value="藤原千花(小原好美)">藤原千花(小原好美)</option>
+                  <option value="fripSide">fripSide</option>
+                  <option value="PRINCESS PRINCESS">PRINCESS PRINCESS</option>
+                  <option value="放課後ティータイム">放課後ティータイム</option>
+                  <option value="My Little Lover">My Little Lover</option>
+                  <option value="松田聖子">松田聖子</option>
+                  <option value="MAHO堂">MAHO堂</option>
+                  <option value="Mariah Carey">Mariah Carey</option>
+                  <option value="Mrs. GREEN APPLE">Mrs. GREEN APPLE</option>
+                  <option value="μ's">μ&#39;s</option>
+                  <option value="mona(夏川椎菜)">mona(夏川椎菜)</option>
+                  <option value="ももいろクローバーZ">ももいろクローバーZ</option>
+                  <option value="森高千里">森高千里</option>
+                  <option value="やくしまるえつこメトロオーケストラ">やくしまるえつこメトロオーケストラ</option>
+                  <option value="eufonius">eufonius</option>
+                  <option value="優里">優里</option>
+                  <option value="UNISON SQUARE GARDEN">UNISON SQUARE GARDEN</option>
+                  <option value="YOASOBI">YOASOBI</option>
+                  <option value="米倉千尋">米倉千尋</option>
+                  <option value="ヨルシカ">ヨルシカ</option>
+                  <option value="40mP">40mP</option>
+                  <option value="Last Note.">Last Note.</option>
+                  <option value="ランカ・リー＝中島愛">ランカ・リー＝中島愛</option>
+                  <option value="LiSA">LiSA</option>
+                  <option value="REBECCA">REBECCA</option>
+                  <option value="蝋梅学園中等部1年3組">蝋梅学園中等部1年3組</option>
+                  <option value="wowaka">wowaka</option>
+                <optgroup label=""></optgroup>
+       </select>
+  
+
+       <label class="c-text-select">配信日</label>
+       <select id="select1" class="select1" onchange="SelectCheck()">
+          <option value="none">選択なし</option>
+                  <option value="2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】">2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</option>
+                  <option value="2023/02">2023/02</option>
+                  <option value="2023">2023</option>
+                  <option value="2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】">2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】</option>
+                  <option value="2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】">2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</option>
+                  <option value="2022/12">2022/12</option>
+                  <option value="2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】">2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</option>
+                  <option value="2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】">2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</option>
+                  <option value="2022/11">2022/11</option>
+                  <option value="2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】">2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</option>
+                  <option value="2022/10/14【歌ってみた】シンデレラ (Giga First Night Remix)【白雪ミラ (cover)】">2022/10/14【歌ってみた】シンデレラ (Giga First Night Remix)【白雪ミラ (cover)】</option>
+                  <option value="2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】">2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</option>
+                  <option value="2022/10">2022/10</option>
+                  <option value="2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】">2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</option>
+                  <option value="2022/08">2022/08</option>
+                  <option value="2022/07/22【歌ってみた】ちょっとあざとい【Vtuber/白雪ミラ】">2022/07/22【歌ってみた】ちょっとあざとい【Vtuber/白雪ミラ】</option>
+                  <option value="2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】">2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</option>
+                  <option value="2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】">2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</option>
+                  <option value="2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】">2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</option>
+                  <option value="2022/07">2022/07</option>
+                  <option value="2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】">2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</option>
+                  <option value="2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】">2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</option>
+                  <option value="2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】">2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</option>
+                  <option value="2022/06">2022/06</option>
+                  <option value="2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】">2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</option>
+                  <option value="2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】">2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</option>
+                  <option value="2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】">2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</option>
+                  <option value="2022/05">2022/05</option>
+                  <option value="2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】">2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</option>
+                  <option value="2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】">2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</option>
+                  <option value="2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】">2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</option>
+                  <option value="2022/04">2022/04</option>
+                  <option value="2022/03/20 さよならプリンセス／白雪ミラ【歌ってみた】">2022/03/20 さよならプリンセス／白雪ミラ【歌ってみた】</option>
+                  <option value="2022/03">2022/03</option>
+                  <option value="2022">2022</option>
+                <optgroup label=""></optgroup>
+       </select>
+    </div>
+
+    <div class ="radio">
+       <input class="r-button" type="radio" name="q1" value="デフォルト" onclick="RadioCheck()" checked>
+          <label class="r-text">デフォルト</label>
+       <input class="r-button" type="radio" name="q1" value="配信順" onclick="RadioCheck()">
+          <label class="r-text">配信順</label>
+       <input class="r-button" type="radio" name="q1" value="歌唱回数順" onclick="RadioCheck()">
+          <label class="r-text">歌唱回数順</label>
+    </div>
+
+
+<div class ="content" id="content">
+
+              <div id="c-1-1" class="1">
+           <input type="checkbox" class="checkbox" id="1-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-1-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=rTmMXXGTJ1c')">
+              <c-text-title id="al-c-1-1" class="Kai">さよならプリンセス</c-text-title><br>
+              <c-text-youtube>2022/03/20 さよならプリンセス／白雪ミラ【歌ってみた】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-2-1" class="2">
+           <input type="checkbox" class="checkbox" id="2-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-2-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=373s')">
+              <c-text-title id="al-c-2-1" class="DECO*27">ヴァンパイア</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-2-2" class="2">
+           <input type="checkbox" class="checkbox" id="2-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-2-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=1084s')">
+              <c-text-title id="al-c-2-2" class="DECO*27">ヴァンパイア</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-2-3" class="2">
+           <input type="checkbox" class="checkbox" id="2-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-2-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=2523s')">
+              <c-text-title id="al-c-2-3" class="DECO*27">ヴァンパイア</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-3-1" class="3">
+           <input type="checkbox" class="checkbox" id="3-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-3-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=1121s')">
+              <c-text-title id="al-c-3-1" class="DECO*27">シンデレラ</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-3-2" class="3">
+           <input type="checkbox" class="checkbox" id="3-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-3-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=551s')">
+              <c-text-title id="al-c-3-2" class="DECO*27">シンデレラ</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-3-3" class="3">
+           <input type="checkbox" class="checkbox" id="3-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-3-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=jnDcCzoZfvk')">
+              <c-text-title id="al-c-3-3" class="DECO*27">シンデレラ</c-text-title><br>
+              <c-text-youtube>2022/10/14【歌ってみた】シンデレラ (Giga First Night Remix)【白雪ミラ (cover)】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-4-1" class="4">
+           <input type="checkbox" class="checkbox" id="4-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-4-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=1571s')">
+              <c-text-title id="al-c-4-1" class="石田よう子">乙女のポリシー</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-5-1" class="5">
+           <input type="checkbox" class="checkbox" id="5-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-5-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=2104s')">
+              <c-text-title id="al-c-5-1" class="YOASOBI">怪物</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-5-2" class="5">
+           <input type="checkbox" class="checkbox" id="5-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-5-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=4159s')">
+              <c-text-title id="al-c-5-2" class="YOASOBI">怪物</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-5-3" class="5">
+           <input type="checkbox" class="checkbox" id="5-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-5-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=1433s')">
+              <c-text-title id="al-c-5-3" class="YOASOBI">怪物</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-6-1" class="6">
+           <input type="checkbox" class="checkbox" id="6-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-6-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=2526s')">
+              <c-text-title id="al-c-6-1" class="eufonius">リフレクティア</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-6-2" class="6">
+           <input type="checkbox" class="checkbox" id="6-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-6-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=1103s')">
+              <c-text-title id="al-c-6-2" class="eufonius">リフレクティア</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-6-3" class="6">
+           <input type="checkbox" class="checkbox" id="6-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-6-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=2451s')">
+              <c-text-title id="al-c-6-3" class="eufonius">リフレクティア</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-7-1" class="7">
+           <input type="checkbox" class="checkbox" id="7-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-7-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=3080s')">
+              <c-text-title id="al-c-7-1" class="Chinozo">グッバイ宣言</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-7-2" class="7">
+           <input type="checkbox" class="checkbox" id="7-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-7-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=1592s')">
+              <c-text-title id="al-c-7-2" class="Chinozo">グッバイ宣言</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-7-3" class="7">
+           <input type="checkbox" class="checkbox" id="7-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-7-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=3812s')">
+              <c-text-title id="al-c-7-3" class="Chinozo">グッバイ宣言</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-7-4" class="7">
+           <input type="checkbox" class="checkbox" id="7-4" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-7-4');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=3067s')">
+              <c-text-title id="al-c-7-4" class="Chinozo">グッバイ宣言</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-8-1" class="8">
+           <input type="checkbox" class="checkbox" id="8-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-8-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=3502s')">
+              <c-text-title id="al-c-8-1" class="宇多田ヒカル">One Last Kiss</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-8-2" class="8">
+           <input type="checkbox" class="checkbox" id="8-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-8-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=5041s')">
+              <c-text-title id="al-c-8-2" class="宇多田ヒカル">One Last Kiss</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-8-3" class="8">
+           <input type="checkbox" class="checkbox" id="8-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-8-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=3897s')">
+              <c-text-title id="al-c-8-3" class="宇多田ヒカル">One Last Kiss</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-9-1" class="9">
+           <input type="checkbox" class="checkbox" id="9-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-9-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=4077s')">
+              <c-text-title id="al-c-9-1" class="ClariS">コネクト</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-10-1" class="10">
+           <input type="checkbox" class="checkbox" id="10-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-10-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1wA-79eMhWk\x26t=5719s')">
+              <c-text-title id="al-c-10-1" class="ナナヲアカリ">ダダダダ天使</c-text-title><br>
+              <c-text-youtube>2022/04/09【誕生日歌枠】みんなお祝いありがとう🎉💗初めての歌枠！【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-10-2" class="10">
+           <input type="checkbox" class="checkbox" id="10-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-10-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=1500s')">
+              <c-text-title id="al-c-10-2" class="ナナヲアカリ">ダダダダ天使</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-10-3" class="10">
+           <input type="checkbox" class="checkbox" id="10-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-10-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=54s78EalM6k\x26t=1721s')">
+              <c-text-title id="al-c-10-3" class="ナナヲアカリ">ダダダダ天使</c-text-title><br>
+              <c-text-youtube>2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-11-1" class="11">
+           <input type="checkbox" class="checkbox" id="11-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-11-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=638s')">
+              <c-text-title id="al-c-11-1" class="HoneyWorks">金曜日のおはよう</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-12-1" class="12">
+           <input type="checkbox" class="checkbox" id="12-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-12-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=1083s')">
+              <c-text-title id="al-c-12-1" class="Aimer">残響散歌</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-12-2" class="12">
+           <input type="checkbox" class="checkbox" id="12-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-12-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=3309s')">
+              <c-text-title id="al-c-12-2" class="Aimer">残響散歌</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-12-3" class="12">
+           <input type="checkbox" class="checkbox" id="12-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-12-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=2830s')">
+              <c-text-title id="al-c-12-3" class="Aimer">残響散歌</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-13-1" class="13">
+           <input type="checkbox" class="checkbox" id="13-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-13-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=1485s')">
+              <c-text-title id="al-c-13-1" class="LiSA">紅蓮華</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-14-1" class="14">
+           <input type="checkbox" class="checkbox" id="14-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-14-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=1921s')">
+              <c-text-title id="al-c-14-1" class="グミ">Catch You Catch Me</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-14-2" class="14">
+           <input type="checkbox" class="checkbox" id="14-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-14-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=1881s')">
+              <c-text-title id="al-c-14-2" class="グミ">Catch You Catch Me</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-15-1" class="15">
+           <input type="checkbox" class="checkbox" id="15-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-15-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=2703s')">
+              <c-text-title id="al-c-15-1" class="Mrs. GREEN APPLE">インフェルノ</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-16-1" class="16">
+           <input type="checkbox" class="checkbox" id="16-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-16-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=3097s')">
+              <c-text-title id="al-c-16-1" class="ナナホシ管弦楽団">おねがいダーリン</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-16-2" class="16">
+           <input type="checkbox" class="checkbox" id="16-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-16-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=364s')">
+              <c-text-title id="al-c-16-2" class="ナナホシ管弦楽団">おねがいダーリン</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-17-1" class="17">
+           <input type="checkbox" class="checkbox" id="17-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-17-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=3728s')">
+              <c-text-title id="al-c-17-1" class="歌組雪月花">回レ！雪月花</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-18-1" class="18">
+           <input type="checkbox" class="checkbox" id="18-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-18-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=QCfnkQGg6c0\x26t=4279s')">
+              <c-text-title id="al-c-18-1" class="Orangestar">アスノヨゾラ哨戒班</c-text-title><br>
+              <c-text-youtube>2022/04/22【歌枠】ミラのお歌聞いてくれる？定期歌枠🎤【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-18-2" class="18">
+           <input type="checkbox" class="checkbox" id="18-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-18-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=11302s')">
+              <c-text-title id="al-c-18-2" class="Orangestar">アスノヨゾラ哨戒班</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-19-1" class="19">
+           <input type="checkbox" class="checkbox" id="19-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-19-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=293s')">
+              <c-text-title id="al-c-19-1" class="ランカ・リー＝中島愛">星間飛行</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-19-2" class="19">
+           <input type="checkbox" class="checkbox" id="19-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-19-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=1507s')">
+              <c-text-title id="al-c-19-2" class="ランカ・リー＝中島愛">星間飛行</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-20-1" class="20">
+           <input type="checkbox" class="checkbox" id="20-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-20-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=719s')">
+              <c-text-title id="al-c-20-1" class="fripSide">sister&#39;s noise</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-21-1" class="21">
+           <input type="checkbox" class="checkbox" id="21-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-21-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=1456s')">
+              <c-text-title id="al-c-21-1" class="放課後ティータイム">GO!GO!MANIAC</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-22-1" class="22">
+           <input type="checkbox" class="checkbox" id="22-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-22-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=1902s')">
+              <c-text-title id="al-c-22-1" class="つじあやの">風になる</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-23-1" class="23">
+           <input type="checkbox" class="checkbox" id="23-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-23-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=2279s')">
+              <c-text-title id="al-c-23-1" class="千石撫子(花澤香菜)">恋愛サーキュレーション</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-24-1" class="24">
+           <input type="checkbox" class="checkbox" id="24-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-24-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=2666s')">
+              <c-text-title id="al-c-24-1" class="supercell">君の知らない物語</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-1" class="25">
+           <input type="checkbox" class="checkbox" id="25-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-25-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=3112s')">
+              <c-text-title id="al-c-25-1" class="坂本真綾">プラチナ</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-2" class="25">
+           <input type="checkbox" class="checkbox" id="25-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-25-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=3252s')">
+              <c-text-title id="al-c-25-2" class="坂本真綾">プラチナ</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-3" class="25">
+           <input type="checkbox" class="checkbox" id="25-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-25-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=4334s')">
+              <c-text-title id="al-c-25-3" class="坂本真綾">プラチナ</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-4" class="25">
+           <input type="checkbox" class="checkbox" id="25-4" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-25-4');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=1409s')">
+              <c-text-title id="al-c-25-4" class="坂本真綾">プラチナ</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-5" class="25">
+           <input type="checkbox" class="checkbox" id="25-5" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-25-5');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=4529s')">
+              <c-text-title id="al-c-25-5" class="坂本真綾">プラチナ</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-25-6" class="25">
+           <input type="checkbox" class="checkbox" id="25-6" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-25-6');OpenWindow('https:\/\/www.youtube.com\/watch?v=54s78EalM6k\x26t=470s')">
+              <c-text-title id="al-c-25-6" class="坂本真綾">プラチナ</c-text-title><br>
+              <c-text-youtube>2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-26-1" class="26">
+           <input type="checkbox" class="checkbox" id="26-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-26-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=zLg6ZakbgGw\x26t=3507s')">
+              <c-text-title id="al-c-26-1" class="高橋洋子">残酷な天使のテーゼ</c-text-title><br>
+              <c-text-youtube>2022/04/29【歌枠】アニソン縛り！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-26-2" class="26">
+           <input type="checkbox" class="checkbox" id="26-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-26-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=1171s')">
+              <c-text-title id="al-c-26-2" class="高橋洋子">残酷な天使のテーゼ</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-26-3" class="26">
+           <input type="checkbox" class="checkbox" id="26-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-26-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=2217s')">
+              <c-text-title id="al-c-26-3" class="高橋洋子">残酷な天使のテーゼ</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-27-1" class="27">
+           <input type="checkbox" class="checkbox" id="27-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-27-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=916s')">
+              <c-text-title id="al-c-27-1" class="YOASOBI">夜に駆ける</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-27-2" class="27">
+           <input type="checkbox" class="checkbox" id="27-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-27-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=440s')">
+              <c-text-title id="al-c-27-2" class="YOASOBI">夜に駆ける</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-28-1" class="28">
+           <input type="checkbox" class="checkbox" id="28-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-28-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=2052s')">
+              <c-text-title id="al-c-28-1" class="40mP">からくりピエロ</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-29-1" class="29">
+           <input type="checkbox" class="checkbox" id="29-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-29-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=2494s')">
+              <c-text-title id="al-c-29-1" class="KANA-BOON">シルエット</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-30-1" class="30">
+           <input type="checkbox" class="checkbox" id="30-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-30-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=2925s')">
+              <c-text-title id="al-c-30-1" class="ピノキオピー">魔法少女とチョコレゐト</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-30-2" class="30">
+           <input type="checkbox" class="checkbox" id="30-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-30-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=3357s')">
+              <c-text-title id="al-c-30-2" class="ピノキオピー">魔法少女とチョコレゐト</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-30-3" class="30">
+           <input type="checkbox" class="checkbox" id="30-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-30-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=3446s')">
+              <c-text-title id="al-c-30-3" class="ピノキオピー">魔法少女とチョコレゐト</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-30-4" class="30">
+           <input type="checkbox" class="checkbox" id="30-4" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-30-4');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=1609s')">
+              <c-text-title id="al-c-30-4" class="ピノキオピー">魔法少女とチョコレゐト</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-31-1" class="31">
+           <input type="checkbox" class="checkbox" id="31-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-31-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=3351s')">
+              <c-text-title id="al-c-31-1" class="Ado">ギラギラ</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-32-1" class="32">
+           <input type="checkbox" class="checkbox" id="32-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-32-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CArEP7TzDxE\x26t=4487s')">
+              <c-text-title id="al-c-32-1" class="aiko">カブトムシ</c-text-title><br>
+              <c-text-youtube>2022/05/06【歌枠】ミラのギャップ知りたい？定期歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-32-2" class="32">
+           <input type="checkbox" class="checkbox" id="32-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-32-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=963s')">
+              <c-text-title id="al-c-32-2" class="aiko">カブトムシ</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-32-3" class="32">
+           <input type="checkbox" class="checkbox" id="32-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-32-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=2960s')">
+              <c-text-title id="al-c-32-3" class="aiko">カブトムシ</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-33-1" class="33">
+           <input type="checkbox" class="checkbox" id="33-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-33-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=1008s')">
+              <c-text-title id="al-c-33-1" class="音莉飴">陽キャJKに憧れる陰キャJKの歌</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-34-1" class="34">
+           <input type="checkbox" class="checkbox" id="34-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-34-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=2004s')">
+              <c-text-title id="al-c-34-1" class="LiSA">ADAMAS</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-35-1" class="35">
+           <input type="checkbox" class="checkbox" id="35-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-35-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=2469s')">
+              <c-text-title id="al-c-35-1" class="椎名林檎">丸の内サディスティック</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-35-2" class="35">
+           <input type="checkbox" class="checkbox" id="35-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-35-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=3469s')">
+              <c-text-title id="al-c-35-2" class="椎名林檎">丸の内サディスティック</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-36-1" class="36">
+           <input type="checkbox" class="checkbox" id="36-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-36-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=3005s')">
+              <c-text-title id="al-c-36-1" class="CHiCO with HoneyWorks">プライド革命</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-36-2" class="36">
+           <input type="checkbox" class="checkbox" id="36-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-36-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=3910s')">
+              <c-text-title id="al-c-36-2" class="CHiCO with HoneyWorks">プライド革命</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-37-1" class="37">
+           <input type="checkbox" class="checkbox" id="37-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-37-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=iB7GSdMh09A\x26t=3870s')">
+              <c-text-title id="al-c-37-1" class="mona(夏川椎菜)">ファンサ</c-text-title><br>
+              <c-text-youtube>2022/05/13【歌枠】1週間お疲れ様かしら！定期歌枠🎤💗【新人Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-38-1" class="38">
+           <input type="checkbox" class="checkbox" id="38-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-38-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=1475s')">
+              <c-text-title id="al-c-38-1" class="ヨルシカ">ただ君に晴れ</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-39-1" class="39">
+           <input type="checkbox" class="checkbox" id="39-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-39-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=1861s')">
+              <c-text-title id="al-c-39-1" class="ツミキ">フォニイ</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-39-2" class="39">
+           <input type="checkbox" class="checkbox" id="39-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-39-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=1811s')">
+              <c-text-title id="al-c-39-2" class="ツミキ">フォニイ</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-39-3" class="39">
+           <input type="checkbox" class="checkbox" id="39-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-39-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=5353s')">
+              <c-text-title id="al-c-39-3" class="ツミキ">フォニイ</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-40-1" class="40">
+           <input type="checkbox" class="checkbox" id="40-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-40-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=2377s')">
+              <c-text-title id="al-c-40-1" class="YOASOBI">三原色</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-41-1" class="41">
+           <input type="checkbox" class="checkbox" id="41-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-41-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=2848s')">
+              <c-text-title id="al-c-41-1" class="ヨルシカ">花に亡霊</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-42-1" class="42">
+           <input type="checkbox" class="checkbox" id="42-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-42-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=3691s')">
+              <c-text-title id="al-c-42-1" class="藤原千花(小原好美)">チカっとチカ千花っ♡</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-43-1" class="43">
+           <input type="checkbox" class="checkbox" id="43-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-43-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=GKL5iLhotTg\x26t=4739s')">
+              <c-text-title id="al-c-43-1" class="YOASOBI">ハルジオン</c-text-title><br>
+              <c-text-youtube>2022/05/30【歌枠】アニソン・ボカロ・JPOPなんでもありの歌枠🎤💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-44-1" class="44">
+           <input type="checkbox" class="checkbox" id="44-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-44-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=526s')">
+              <c-text-title id="al-c-44-1" class="香椎モイミ">キャットラビング</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-44-2" class="44">
+           <input type="checkbox" class="checkbox" id="44-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-44-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=10169s')">
+              <c-text-title id="al-c-44-2" class="香椎モイミ">キャットラビング</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-44-3" class="44">
+           <input type="checkbox" class="checkbox" id="44-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-44-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=601s')">
+              <c-text-title id="al-c-44-3" class="香椎モイミ">キャットラビング</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-45-1" class="45">
+           <input type="checkbox" class="checkbox" id="45-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-45-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=799s')">
+              <c-text-title id="al-c-45-1" class="JUDY AND MARY">そばかす</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-45-2" class="45">
+           <input type="checkbox" class="checkbox" id="45-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-45-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=1149s')">
+              <c-text-title id="al-c-45-2" class="JUDY AND MARY">そばかす</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-46-1" class="46">
+           <input type="checkbox" class="checkbox" id="46-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-46-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=1231s')">
+              <c-text-title id="al-c-46-1" class="Ayase">幽霊東京</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-46-2" class="46">
+           <input type="checkbox" class="checkbox" id="46-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-46-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=566s')">
+              <c-text-title id="al-c-46-2" class="Ayase">幽霊東京</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-47-1" class="47">
+           <input type="checkbox" class="checkbox" id="47-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-47-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=1604s')">
+              <c-text-title id="al-c-47-1" class="Goose house">光るなら</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-48-1" class="48">
+           <input type="checkbox" class="checkbox" id="48-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-48-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=2182s')">
+              <c-text-title id="al-c-48-1" class="柊キライ">ラブカ？</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-48-2" class="48">
+           <input type="checkbox" class="checkbox" id="48-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-48-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=5526s')">
+              <c-text-title id="al-c-48-2" class="柊キライ">ラブカ？</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-48-3" class="48">
+           <input type="checkbox" class="checkbox" id="48-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-48-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=3806s')">
+              <c-text-title id="al-c-48-3" class="柊キライ">ラブカ？</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-49-1" class="49">
+           <input type="checkbox" class="checkbox" id="49-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-49-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=2533s')">
+              <c-text-title id="al-c-49-1" class="SEKAI NO OWARI">虹色の戦争</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-49-2" class="49">
+           <input type="checkbox" class="checkbox" id="49-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-49-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=5881s')">
+              <c-text-title id="al-c-49-2" class="SEKAI NO OWARI">虹色の戦争</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-50-1" class="50">
+           <input type="checkbox" class="checkbox" id="50-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-50-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=3184s')">
+              <c-text-title id="al-c-50-1" class="CHiCO with HoneyWorks">ノスタルジックレインフォール</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-51-1" class="51">
+           <input type="checkbox" class="checkbox" id="51-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-51-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=4933s')">
+              <c-text-title id="al-c-51-1" class="PRINCESS PRINCESS">世界でいちばん熱い夏</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-52-1" class="52">
+           <input type="checkbox" class="checkbox" id="52-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-52-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=5701s')">
+              <c-text-title id="al-c-52-1" class="かいりきベア">ダーリンダンス</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-53-1" class="53">
+           <input type="checkbox" class="checkbox" id="53-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-53-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=E3TOXRAeZb0\x26t=6049s')">
+              <c-text-title id="al-c-53-1" class="椎名林檎">ここでキスして。</c-text-title><br>
+              <c-text-youtube>2022/06/01【歌枠】月初から！またまた歌う～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-54-1" class="54">
+           <input type="checkbox" class="checkbox" id="54-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-54-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=373s')">
+              <c-text-title id="al-c-54-1" class="千石撫子(花澤香菜)">もうそう♡えくすぷれす</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-55-1" class="55">
+           <input type="checkbox" class="checkbox" id="55-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-55-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=743s')">
+              <c-text-title id="al-c-55-1" class="nano.RIPE">ハナノイロ</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-56-1" class="56">
+           <input type="checkbox" class="checkbox" id="56-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-56-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=1540s')">
+              <c-text-title id="al-c-56-1" class="蝋梅学園中等部1年3組">はじまりのセツナ</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-56-2" class="56">
+           <input type="checkbox" class="checkbox" id="56-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-56-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=4014s')">
+              <c-text-title id="al-c-56-2" class="蝋梅学園中等部1年3組">はじまりのセツナ</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-56-3" class="56">
+           <input type="checkbox" class="checkbox" id="56-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-56-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=3239s')">
+              <c-text-title id="al-c-56-3" class="蝋梅学園中等部1年3組">はじまりのセツナ</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-57-1" class="57">
+           <input type="checkbox" class="checkbox" id="57-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-57-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=2115s')">
+              <c-text-title id="al-c-57-1" class="戦場ヶ原ひたぎ(斎藤千和)">staple stable</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-58-1" class="58">
+           <input type="checkbox" class="checkbox" id="58-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-58-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=2533s')">
+              <c-text-title id="al-c-58-1" class="田村ゆかり">fancy baby doll</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-59-1" class="59">
+           <input type="checkbox" class="checkbox" id="59-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-59-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=2885s')">
+              <c-text-title id="al-c-59-1" class="LiSA">Catch the Moment</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-60-1" class="60">
+           <input type="checkbox" class="checkbox" id="60-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-60-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=8q_PbEmdwRs\x26t=3648s')">
+              <c-text-title id="al-c-60-1" class="ももいろクローバーZ">MOON PRIDE</c-text-title><br>
+              <c-text-youtube>2022/06/12【歌枠】アニメ好きVtuberのアニソン縛りのお歌枠～！💗【新人Vtuber】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-61-1" class="61">
+           <input type="checkbox" class="checkbox" id="61-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-61-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=338s')">
+              <c-text-title id="al-c-61-1" class="supercell">ワールドイズマイン</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-61-2" class="61">
+           <input type="checkbox" class="checkbox" id="61-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-61-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=54s78EalM6k\x26t=922s')">
+              <c-text-title id="al-c-61-2" class="supercell">ワールドイズマイン</c-text-title><br>
+              <c-text-youtube>2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-62-1" class="62">
+           <input type="checkbox" class="checkbox" id="62-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-62-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=731s')">
+              <c-text-title id="al-c-62-1" class="ピノキオピー">神っぽいな</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-63-1" class="63">
+           <input type="checkbox" class="checkbox" id="63-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-63-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=3074s')">
+              <c-text-title id="al-c-63-1" class="doriko">ロミオとシンデレラ</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-63-2" class="63">
+           <input type="checkbox" class="checkbox" id="63-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-63-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=4199s')">
+              <c-text-title id="al-c-63-2" class="doriko">ロミオとシンデレラ</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-64-1" class="64">
+           <input type="checkbox" class="checkbox" id="64-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-64-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=5011s')">
+              <c-text-title id="al-c-64-1" class="Ado">踊</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-65-1" class="65">
+           <input type="checkbox" class="checkbox" id="65-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-65-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=1dNqTIgjlGI\x26t=5524s')">
+              <c-text-title id="al-c-65-1" class="優里">ドライフラワー</c-text-title><br>
+              <c-text-youtube>2022/06/27【歌枠】ミラのお歌でずっきゅんしちゃえ【カラオケ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-65-2" class="65">
+           <input type="checkbox" class="checkbox" id="65-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-65-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=2367s')">
+              <c-text-title id="al-c-65-2" class="優里">ドライフラワー</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-65-3" class="65">
+           <input type="checkbox" class="checkbox" id="65-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-65-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=2465s')">
+              <c-text-title id="al-c-65-3" class="優里">ドライフラワー</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-65-4" class="65">
+           <input type="checkbox" class="checkbox" id="65-4" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-65-4');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=3629s')">
+              <c-text-title id="al-c-65-4" class="優里">ドライフラワー</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-66-1" class="66">
+           <input type="checkbox" class="checkbox" id="66-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-66-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=485s')">
+              <c-text-title id="al-c-66-1" class="いきものがかり">気まぐれロマンティック</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-67-1" class="67">
+           <input type="checkbox" class="checkbox" id="67-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-67-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=898s')">
+              <c-text-title id="al-c-67-1" class="wowaka">アンノウン・マザーグース</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-68-1" class="68">
+           <input type="checkbox" class="checkbox" id="68-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-68-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=1344s')">
+              <c-text-title id="al-c-68-1" class="Eve">お気に召すまま</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-68-2" class="68">
+           <input type="checkbox" class="checkbox" id="68-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-68-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=3210s')">
+              <c-text-title id="al-c-68-2" class="Eve">お気に召すまま</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-69-1" class="69">
+           <input type="checkbox" class="checkbox" id="69-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-69-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=2904s')">
+              <c-text-title id="al-c-69-1" class="XX:me">トリカゴ</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-70-1" class="70">
+           <input type="checkbox" class="checkbox" id="70-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-70-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=3717s')">
+              <c-text-title id="al-c-70-1" class="田村ゆかり">秘密の扉から会いにきて</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-71-1" class="71">
+           <input type="checkbox" class="checkbox" id="71-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-71-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=AwDbcuoP5-s\x26t=4327s')">
+              <c-text-title id="al-c-71-1" class="HoneyWorks">東京サマーセッション</c-text-title><br>
+              <c-text-youtube>2022/07/02【#歌枠】7月最初も歌う～！初見さん大歓迎💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-72-1" class="72">
+           <input type="checkbox" class="checkbox" id="72-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-72-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=568s')">
+              <c-text-title id="al-c-72-1" class="ZAQ">カーストルーム</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-72-2" class="72">
+           <input type="checkbox" class="checkbox" id="72-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-72-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=2049s')">
+              <c-text-title id="al-c-72-2" class="ZAQ">カーストルーム</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-73-1" class="73">
+           <input type="checkbox" class="checkbox" id="73-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-73-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=919s')">
+              <c-text-title id="al-c-73-1" class="BiBi">Cutie Panther</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-74-1" class="74">
+           <input type="checkbox" class="checkbox" id="74-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-74-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=2197s')">
+              <c-text-title id="al-c-74-1" class="瀧川ありさ">さよならのゆくえ</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-75-1" class="75">
+           <input type="checkbox" class="checkbox" id="75-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-75-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=2390s')">
+              <c-text-title id="al-c-75-1" class="いきものがかり">ブルーバード</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-76-1" class="76">
+           <input type="checkbox" class="checkbox" id="76-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-76-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=2748s')">
+              <c-text-title id="al-c-76-1" class="TK from 凛として時雨">unravel</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-77-1" class="77">
+           <input type="checkbox" class="checkbox" id="77-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-77-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=3397s')">
+              <c-text-title id="al-c-77-1" class="陰陽座">甲賀忍法帖</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-78-1" class="78">
+           <input type="checkbox" class="checkbox" id="78-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-78-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=b2x-duliQak\x26t=3877s')">
+              <c-text-title id="al-c-78-1" class="fripSide">only my railgun</c-text-title><br>
+              <c-text-youtube>2022/07/04【#歌枠】アニソン縛りのお歌枠！💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-79-1" class="79">
+           <input type="checkbox" class="checkbox" id="79-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-79-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=4174s')">
+              <c-text-title id="al-c-79-1" class="LiSA">炎</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-80-1" class="80">
+           <input type="checkbox" class="checkbox" id="80-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-80-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=4869s')">
+              <c-text-title id="al-c-80-1" class="P丸様。">シル・ヴ・プレジデント</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-81-1" class="81">
+           <input type="checkbox" class="checkbox" id="81-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-81-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=6373s')">
+              <c-text-title id="al-c-81-1" class="欅坂46">サイレントマジョリティー</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-82-1" class="82">
+           <input type="checkbox" class="checkbox" id="82-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-82-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=6931s')">
+              <c-text-title id="al-c-82-1" class="日向電工">ブリキノダンス</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-83-1" class="83">
+           <input type="checkbox" class="checkbox" id="83-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-83-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=7294s')">
+              <c-text-title id="al-c-83-1" class="MAHO堂">おジャ魔女カーニバル!!</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-84-1" class="84">
+           <input type="checkbox" class="checkbox" id="84-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-84-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=7824s')">
+              <c-text-title id="al-c-84-1" class="TM NETWORK">Get Wild</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-85-1" class="85">
+           <input type="checkbox" class="checkbox" id="85-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-85-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=8157s')">
+              <c-text-title id="al-c-85-1" class="宇多田ヒカル">First Love</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-86-1" class="86">
+           <input type="checkbox" class="checkbox" id="86-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-86-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=8509s')">
+              <c-text-title id="al-c-86-1" class="岩崎良美">タッチ</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-86-2" class="86">
+           <input type="checkbox" class="checkbox" id="86-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-86-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=306s')">
+              <c-text-title id="al-c-86-2" class="岩崎良美">タッチ</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-87-1" class="87">
+           <input type="checkbox" class="checkbox" id="87-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-87-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=8905s')">
+              <c-text-title id="al-c-87-1" class="バルーン">シャルル</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-87-2" class="87">
+           <input type="checkbox" class="checkbox" id="87-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-87-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=638s')">
+              <c-text-title id="al-c-87-2" class="バルーン">シャルル</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-87-3" class="87">
+           <input type="checkbox" class="checkbox" id="87-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-87-3');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=3553s')">
+              <c-text-title id="al-c-87-3" class="バルーン">シャルル</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-88-1" class="88">
+           <input type="checkbox" class="checkbox" id="88-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-88-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=9270s')">
+              <c-text-title id="al-c-88-1" class="UNISON SQUARE GARDEN">シュガーソングとビターステップ</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-89-1" class="89">
+           <input type="checkbox" class="checkbox" id="89-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-89-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=9736s')">
+              <c-text-title id="al-c-89-1" class="サスケ">青いベンチ</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-90-1" class="90">
+           <input type="checkbox" class="checkbox" id="90-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-90-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=ZdZJu_d1qVA\x26t=10578s')">
+              <c-text-title id="al-c-90-1" class="ハチ">マトリョシカ</c-text-title><br>
+              <c-text-youtube>2022/07/20【#歌枠】チャンネル登録者3,500人を目指して！歌う🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-91-1" class="91">
+           <input type="checkbox" class="checkbox" id="91-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-91-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=mLEudj1NIeM')">
+              <c-text-title id="al-c-91-1" class="才歌">ちょっとあざとい</c-text-title><br>
+              <c-text-youtube>2022/07/22【歌ってみた】ちょっとあざとい【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-92-1" class="92">
+           <input type="checkbox" class="checkbox" id="92-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-92-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=1006s')">
+              <c-text-title id="al-c-92-1" class="やくしまるえつこメトロオーケストラ">少年よ我に帰れ</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-93-1" class="93">
+           <input type="checkbox" class="checkbox" id="93-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-93-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=1633s')">
+              <c-text-title id="al-c-93-1" class="中島愛">サタデー・ナイト・クエスチョン</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-94-1" class="94">
+           <input type="checkbox" class="checkbox" id="94-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-94-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=1888s')">
+              <c-text-title id="al-c-94-1" class="スキマスイッチ">奏</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-94-2" class="94">
+           <input type="checkbox" class="checkbox" id="94-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-94-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=1140s')">
+              <c-text-title id="al-c-94-2" class="スキマスイッチ">奏</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-95-1" class="95">
+           <input type="checkbox" class="checkbox" id="95-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-95-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hx2_unCDwnI\x26t=3873s')">
+              <c-text-title id="al-c-95-1" class="Ado">新時代</c-text-title><br>
+              <c-text-youtube>2022/08/14【歌枠】熱帯夜のチルお歌枠🎤💗【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-96-1" class="96">
+           <input type="checkbox" class="checkbox" id="96-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-96-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=241s')">
+              <c-text-title id="al-c-96-1" class="ClariS">ヒトリゴト</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-97-1" class="97">
+           <input type="checkbox" class="checkbox" id="97-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-97-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=894s')">
+              <c-text-title id="al-c-97-1" class="亜沙">吉原ラメント</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-98-1" class="98">
+           <input type="checkbox" class="checkbox" id="98-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-98-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=1668s')">
+              <c-text-title id="al-c-98-1" class="Last Note.">セツナトリップ</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-99-1" class="99">
+           <input type="checkbox" class="checkbox" id="99-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-99-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=2060s')">
+              <c-text-title id="al-c-99-1" class="R Sound Design">flos</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-100-1" class="100">
+           <input type="checkbox" class="checkbox" id="100-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-100-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=2392s')">
+              <c-text-title id="al-c-100-1" class="Kanaria">EYE</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-100-2" class="100">
+           <input type="checkbox" class="checkbox" id="100-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-100-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=1904s')">
+              <c-text-title id="al-c-100-2" class="Kanaria">EYE</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-101-1" class="101">
+           <input type="checkbox" class="checkbox" id="101-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-101-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=2595s')">
+              <c-text-title id="al-c-101-1" class="ZOC">チュープリ</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-102-1" class="102">
+           <input type="checkbox" class="checkbox" id="102-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-102-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=2890s')">
+              <c-text-title id="al-c-102-1" class="Kanaria">エンヴィーベイビー</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-103-1" class="103">
+           <input type="checkbox" class="checkbox" id="103-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-103-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=3532s')">
+              <c-text-title id="al-c-103-1" class="syudou">ビターチョコデコレーション</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-104-1" class="104">
+           <input type="checkbox" class="checkbox" id="104-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-104-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=hVyWGvCyUPc\x26t=3823s')">
+              <c-text-title id="al-c-104-1" class="宇多田ヒカル">Beautiful World</c-text-title><br>
+              <c-text-youtube>2022/10/05【歌枠】久しぶりに～！可愛すぎる歌枠っ🎤【Vtuber 白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-105-1" class="105">
+           <input type="checkbox" class="checkbox" id="105-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-105-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=680s')">
+              <c-text-title id="al-c-105-1" class="シェリル・ノーム starring May'n,ランカ・リー=中島愛">ライオン</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-106-1" class="106">
+           <input type="checkbox" class="checkbox" id="106-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-106-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=R8uUNEoEcmI\x26t=4696s')">
+              <c-text-title id="al-c-106-1" class="Ado">逆光</c-text-title><br>
+              <c-text-youtube>2022/10/17【コラボ歌枠】ふぶと一緒にカラオケデート！いっぱい歌う～🎤【エアプロ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-107-1" class="107">
+           <input type="checkbox" class="checkbox" id="107-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-107-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=1584s')">
+              <c-text-title id="al-c-107-1" class="BiBi">冬がくれた予感</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-108-1" class="108">
+           <input type="checkbox" class="checkbox" id="108-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-108-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=2154s')">
+              <c-text-title id="al-c-108-1" class="Starlet">We Are Never Ever Getting  Back Together</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-109-1" class="109">
+           <input type="checkbox" class="checkbox" id="109-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-109-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=2480s')">
+              <c-text-title id="al-c-109-1" class="小比類巻かほる">City Hunter〜愛よ消えないで〜</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-109-2" class="109">
+           <input type="checkbox" class="checkbox" id="109-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-109-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=2850s')">
+              <c-text-title id="al-c-109-2" class="小比類巻かほる">City Hunter〜愛よ消えないで〜</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-110-1" class="110">
+           <input type="checkbox" class="checkbox" id="110-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-110-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=2898s')">
+              <c-text-title id="al-c-110-1" class="羽川翼(堀江由衣)">chocolate insomnia</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-111-1" class="111">
+           <input type="checkbox" class="checkbox" id="111-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-111-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=3354s')">
+              <c-text-title id="al-c-111-1" class="Billie Eilish">bad guy</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-112-1" class="112">
+           <input type="checkbox" class="checkbox" id="112-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-112-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=N6JrHSoVFpc\x26t=4717s')">
+              <c-text-title id="al-c-112-1" class="YOASOBI">祝福</c-text-title><br>
+              <c-text-youtube>2022/11/13【歌枠 SingingStream】しっとり多め！ちょっぴり大人な歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-112-2" class="112">
+           <input type="checkbox" class="checkbox" id="112-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-112-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=3667s')">
+              <c-text-title id="al-c-112-2" class="YOASOBI">祝福</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-113-1" class="113">
+           <input type="checkbox" class="checkbox" id="113-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-113-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=686s')">
+              <c-text-title id="al-c-113-1" class="広瀬香美">ロマンスの神様</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-114-1" class="114">
+           <input type="checkbox" class="checkbox" id="114-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-114-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=1033s')">
+              <c-text-title id="al-c-114-1" class="相川七瀬">夢見る少女じゃいられない</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-115-1" class="115">
+           <input type="checkbox" class="checkbox" id="115-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-115-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=1660s')">
+              <c-text-title id="al-c-115-1" class="My Little Lover">Hello, Again 〜昔からある場所〜</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-116-1" class="116">
+           <input type="checkbox" class="checkbox" id="116-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-116-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=2168s')">
+              <c-text-title id="al-c-116-1" class="REBECCA">フレンズ</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-116-2" class="116">
+           <input type="checkbox" class="checkbox" id="116-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-116-2');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=3217s')">
+              <c-text-title id="al-c-116-2" class="REBECCA">フレンズ</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-117-1" class="117">
+           <input type="checkbox" class="checkbox" id="117-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-117-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=2768s')">
+              <c-text-title id="al-c-117-1" class="松田聖子">赤いスイートピー</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-118-1" class="118">
+           <input type="checkbox" class="checkbox" id="118-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-118-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=3258s')">
+              <c-text-title id="al-c-118-1" class="">翼をください</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-119-1" class="119">
+           <input type="checkbox" class="checkbox" id="119-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-119-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=3755s')">
+              <c-text-title id="al-c-119-1" class="森高千里">渡良瀬橋</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-120-1" class="120">
+           <input type="checkbox" class="checkbox" id="120-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-120-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=4148s')">
+              <c-text-title id="al-c-120-1" class="PRINCESS PRINCESS">Diamonds</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-121-1" class="121">
+           <input type="checkbox" class="checkbox" id="121-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-121-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=4567s')">
+              <c-text-title id="al-c-121-1" class="See-Saw">あんなに一緒だったのに</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-122-1" class="122">
+           <input type="checkbox" class="checkbox" id="122-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-122-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=EnJW7BxnFBQ\x26t=5024s')">
+              <c-text-title id="al-c-122-1" class="米倉千尋">嵐の中で輝いて</c-text-title><br>
+              <c-text-youtube>2022/11/23【歌枠 SingingStream】懐メロ縛りのお歌枠🎤❤ケツカッチンです！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-123-1" class="123">
+           <input type="checkbox" class="checkbox" id="123-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-123-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=686s')">
+              <c-text-title id="al-c-123-1" class="すりぃ">テレキャスタービーボーイ</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-124-1" class="124">
+           <input type="checkbox" class="checkbox" id="124-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-124-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=2312s')">
+              <c-text-title id="al-c-124-1" class="Junky">メランコリック</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-125-1" class="125">
+           <input type="checkbox" class="checkbox" id="125-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-125-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=4267s')">
+              <c-text-title id="al-c-125-1" class="EasyPop">ハッピーシンセサイザ</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-126-1" class="126">
+           <input type="checkbox" class="checkbox" id="126-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-126-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=4552s')">
+              <c-text-title id="al-c-126-1" class="kemu">地球最後の告白を</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-127-1" class="127">
+           <input type="checkbox" class="checkbox" id="127-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-127-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=CnY0F7uGhmw\x26t=4925s')">
+              <c-text-title id="al-c-127-1" class="DECO*27">妄想税</c-text-title><br>
+              <c-text-youtube>2022/12/13【歌枠】初見さん歓迎！ボカロ縛りのお歌枠🎤❤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-128-1" class="128">
+           <input type="checkbox" class="checkbox" id="128-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-128-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=54s78EalM6k\x26t=77s')">
+              <c-text-title id="al-c-128-1" class="Mariah Carey">All I Want for Christmas Is You</c-text-title><br>
+              <c-text-youtube>2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-129-1" class="129">
+           <input type="checkbox" class="checkbox" id="129-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-129-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=54s78EalM6k\x26t=1386s')">
+              <c-text-title id="al-c-129-1" class="μ's">Snow halation</c-text-title><br>
+              <c-text-youtube>2022/12/24【歌枠 SingingStream】Happy holiday🎄エアプロ歌リレーはじまるよー！【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-130-1" class="130">
+           <input type="checkbox" class="checkbox" id="130-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-130-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=324s')">
+              <c-text-title id="al-c-130-1" class="阿良々木月火(井口裕香)">白金ディスコ</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-131-1" class="131">
+           <input type="checkbox" class="checkbox" id="131-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-131-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=797s')">
+              <c-text-title id="al-c-131-1" class="奥華子">ガーネット</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-132-1" class="132">
+           <input type="checkbox" class="checkbox" id="132-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-132-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=1261s')">
+              <c-text-title id="al-c-132-1" class="BAAD">君が好きだと叫びたい</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-133-1" class="133">
+           <input type="checkbox" class="checkbox" id="133-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-133-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=1667s')">
+              <c-text-title id="al-c-133-1" class="千綿ヒデノリ">カサブタ</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-134-1" class="134">
+           <input type="checkbox" class="checkbox" id="134-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="gtag('event', 'milac-134-1');OpenWindow('https:\/\/www.youtube.com\/watch?v=LoWkdzF9m6s\x26t=2291s')">
+              <c-text-title id="al-c-134-1" class="PRINCESS PRINCESS">M</c-text-title><br>
+              <c-text-youtube>2023/02/02【歌枠】初見さん歓迎！お昼の懐メロ・アニソン歌枠🎤【Vtuber/白雪ミラ】</c-text-youtube>
+           </button>
+        </div>
+
+      
+
+    </div>
+
+   <script type="text/javascript">
+       
+       
+var list = new Array(
+"1-1",
+"2-1",
+"2-2",
+"2-3",
+"3-1",
+"3-2",
+"3-3",
+"4-1",
+"5-1",
+"5-2",
+"5-3",
+"6-1",
+"6-2",
+"6-3",
+"7-1",
+"7-2",
+"7-3",
+"7-4",
+"8-1",
+"8-2",
+"8-3",
+"9-1",
+"10-1",
+"10-2",
+"10-3",
+"11-1",
+"12-1",
+"12-2",
+"12-3",
+"13-1",
+"14-1",
+"14-2",
+"15-1",
+"16-1",
+"16-2",
+"17-1",
+"18-1",
+"18-2",
+"19-1",
+"19-2",
+"20-1",
+"21-1",
+"22-1",
+"23-1",
+"24-1",
+"25-1",
+"25-2",
+"25-3",
+"25-4",
+"25-5",
+"25-6",
+"26-1",
+"26-2",
+"26-3",
+"27-1",
+"27-2",
+"28-1",
+"29-1",
+"30-1",
+"30-2",
+"30-3",
+"30-4",
+"31-1",
+"32-1",
+"32-2",
+"32-3",
+"33-1",
+"34-1",
+"35-1",
+"35-2",
+"36-1",
+"36-2",
+"37-1",
+"38-1",
+"39-1",
+"39-2",
+"39-3",
+"40-1",
+"41-1",
+"42-1",
+"43-1",
+"44-1",
+"44-2",
+"44-3",
+"45-1",
+"45-2",
+"46-1",
+"46-2",
+"47-1",
+"48-1",
+"48-2",
+"48-3",
+"49-1",
+"49-2",
+"50-1",
+"51-1",
+"52-1",
+"53-1",
+"54-1",
+"55-1",
+"56-1",
+"56-2",
+"56-3",
+"57-1",
+"58-1",
+"59-1",
+"60-1",
+"61-1",
+"61-2",
+"62-1",
+"63-1",
+"63-2",
+"64-1",
+"65-1",
+"65-2",
+"65-3",
+"65-4",
+"66-1",
+"67-1",
+"68-1",
+"68-2",
+"69-1",
+"70-1",
+"71-1",
+"72-1",
+"72-2",
+"73-1",
+"74-1",
+"75-1",
+"76-1",
+"77-1",
+"78-1",
+"79-1",
+"80-1",
+"81-1",
+"82-1",
+"83-1",
+"84-1",
+"85-1",
+"86-1",
+"86-2",
+"87-1",
+"87-2",
+"87-3",
+"88-1",
+"89-1",
+"90-1",
+"91-1",
+"92-1",
+"93-1",
+"94-1",
+"94-2",
+"95-1",
+"96-1",
+"97-1",
+"98-1",
+"99-1",
+"100-1",
+"100-2",
+"101-1",
+"102-1",
+"103-1",
+"104-1",
+"105-1",
+"106-1",
+"107-1",
+"108-1",
+"109-1",
+"109-2",
+"110-1",
+"111-1",
+"112-1",
+"112-2",
+"113-1",
+"114-1",
+"115-1",
+"116-1",
+"116-2",
+"117-1",
+"118-1",
+"119-1",
+"120-1",
+"121-1",
+"122-1",
+"123-1",
+"124-1",
+"125-1",
+"126-1",
+"127-1",
+"128-1",
+"129-1",
+"130-1",
+"131-1",
+"132-1",
+"133-1",
+"134-1",
+);
+
+
+
+
+
+var rh = new Array(
+"1-1",
+"2-1",
+"3-1",
+"4-1",
+"5-1",
+"6-1",
+"7-1",
+"8-1",
+"9-1",
+"10-1",
+"11-1",
+"12-1",
+"13-1",
+"14-1",
+"15-1",
+"16-1",
+"17-1",
+"18-1",
+"19-1",
+"20-1",
+"6-2",
+"21-1",
+"22-1",
+"23-1",
+"24-1",
+"25-1",
+"26-1",
+"27-1",
+"7-2",
+"28-1",
+"29-1",
+"30-1",
+"31-1",
+"32-1",
+"8-2",
+"3-2",
+"33-1",
+"10-2",
+"34-1",
+"35-1",
+"36-1",
+"37-1",
+"27-2",
+"32-2",
+"38-1",
+"39-1",
+"40-1",
+"41-1",
+"25-2",
+"42-1",
+"43-1",
+"44-1",
+"45-1",
+"46-1",
+"47-1",
+"48-1",
+"49-1",
+"50-1",
+"8-3",
+"25-3",
+"51-1",
+"52-1",
+"53-1",
+"54-1",
+"55-1",
+"56-1",
+"57-1",
+"58-1",
+"59-1",
+"12-2",
+"60-1",
+"61-1",
+"62-1",
+"2-2",
+"25-4",
+"39-2",
+"63-1",
+"5-2",
+"64-1",
+"65-1",
+"66-1",
+"67-1",
+"68-1",
+"6-3",
+"69-1",
+"70-1",
+"56-2",
+"71-1",
+"72-1",
+"73-1",
+"19-2",
+"14-2",
+"74-1",
+"75-1",
+"76-1",
+"77-1",
+"78-1",
+"45-2",
+"72-2",
+"65-2",
+"12-3",
+"30-2",
+"7-3",
+"79-1",
+"25-5",
+"80-1",
+"48-2",
+"49-2",
+"81-1",
+"82-1",
+"83-1",
+"84-1",
+"85-1",
+"86-1",
+"87-1",
+"88-1",
+"89-1",
+"44-2",
+"90-1",
+"18-2",
+"91-1",
+"46-2",
+"92-1",
+"93-1",
+"94-1",
+"65-3",
+"32-3",
+"35-2",
+"95-1",
+"96-1",
+"44-3",
+"97-1",
+"26-2",
+"98-1",
+"99-1",
+"100-1",
+"101-1",
+"102-1",
+"56-3",
+"103-1",
+"104-1",
+"3-3",
+"105-1",
+"5-3",
+"100-2",
+"26-3",
+"2-3",
+"7-4",
+"30-3",
+"48-3",
+"63-2",
+"106-1",
+"87-2",
+"94-2",
+"107-1",
+"108-1",
+"109-1",
+"110-1",
+"111-1",
+"65-4",
+"112-1",
+"86-2",
+"113-1",
+"114-1",
+"115-1",
+"116-1",
+"117-1",
+"118-1",
+"119-1",
+"120-1",
+"121-1",
+"122-1",
+"16-2",
+"123-1",
+"30-4",
+"124-1",
+"68-2",
+"87-3",
+"36-2",
+"125-1",
+"126-1",
+"127-1",
+"39-3",
+"128-1",
+"25-6",
+"61-2",
+"129-1",
+"10-3",
+"130-1",
+"131-1",
+"132-1",
+"133-1",
+"134-1",
+"109-2",
+"116-2",
+"112-2",
+);
+       
+       
+      var loadcontent;
+      var loadcheckbox;
+      var loadlist;
+       
+      window.onload = firstscript();
+      
+       
+       
+      function firstscript(){
+         var i=0;
+         while( i<list.length ){
+            loadlist = JSON.parse(localStorage.getItem('milasave'+list[i]));
+            if(loadlist == "true"){
+               loadcheckbox = document.getElementById(list[i]);
+               loadcheckbox.checked = true;
+            }
+            i++;
+         }
+          
+         loadlist = JSON.parse(localStorage.getItem('milasavefavorite'));
+         if(loadlist == "true"){
+            loadcheckbox = document.getElementById('favorite');
+            loadcheckbox.checked = true;
+            FavoriteOn();
+         }
+          
+         loadlist = JSON.parse(localStorage.getItem('milasaveradio')); 
+         if(loadlist == "1"){
+            loadcheckbox = document.getElementsByName('q1');
+            loadcheckbox[1].checked = true;
+         } 
+         else if(loadlist == "2"){
+            loadcheckbox = document.getElementsByName('q1');
+            loadcheckbox[2].checked = true;
+         } 
+         RadioCheck();
+      }
+       
+       
+       
+      function Save() {
+          var i = 0;
+          while( i<list.length ){
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  localStorage.setItem('milasave'+list[i],JSON.stringify("true"));
+             }
+             else{
+                 loadlist = JSON.parse(localStorage.getItem('milasave'+list[i]));
+                 if(loadlist == "true"){
+                    localStorage.removeItem('milasave'+list[i]);
+                 }
+             }
+             i++;
+          }
+      }
+      
+      
+      function ConfirmAlert(){
+          var message = "保存データを削除しますか？";
+          if(confirm(message)){
+             Delete();
+          }
+      } 
+       
+      function Delete(){
+          var i = 0;
+          while( i<list.length ){
+             localStorage.removeItem('milasave'+list[i]);
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  loadcheckbox.checked = false;
+             }
+             i++;
+          }
+          localStorage.removeItem('milasavefavorite');
+          localStorage.removeItem('milasaveradio');
+      } 
+       
+       
+      function FavoriteCheck() {
+         loadcheckbox = document.getElementById("favorite");
+         if(loadcheckbox.checked == true){
+            FavoriteOn(); 
+         }
+         else{
+            FavoriteOff();
+         }
+         SelectCheck();
+      } 
+    
+       
+      function FavoriteOn() {
+          var i = 0;
+          while( i<list.length ){
+             loadlist = JSON.parse(localStorage.getItem('milasave'+list[i]));
+             if(loadlist == "true"){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             }
+             else{
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.add("c-active-none");
+             }
+             i++;
+          }
+          localStorage.setItem('milasavefavorite',JSON.stringify("true"));
+      }
+       
+      function FavoriteOff() {
+          var i = 0;
+          while( i<list.length ){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             i++;
+          }
+          localStorage.removeItem('milasavefavorite');
+      }
+        
+      
+      function SelectCheck() {
+         var select1check = document.getElementById("select1");
+         var select2check = document.getElementById("select4");
+         var select3check = document.getElementById("select3");
+         var i = 0;
+         while( i<list.length ){
+            loadcontent = document.getElementById("c-"+list[i]);
+            loadcontent.classList.remove("c-select-none");
+            loadcontent.classList.remove("c-select2-none");
+            loadcontent.classList.remove("c-select3-none");
+            i++;
+         }  
+         if(select1check.value != "none"){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("c-"+list[i]);
+               if(loadcontent.textContent.indexOf(select1check.value) == -1 ){
+                  loadcontent.classList.add("c-select-none");
+               }
+               i++;
+            }
+         }
+         if(select2check.value != "" || select2check.value != null){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("al-c-"+list[i]);
+               if(loadcontent.textContent.indexOf(select2check.value) == -1){
+                  loadcontent = document.getElementById("c-"+list[i]);
+                  loadcontent.classList.add("c-select2-none");       
+               }
+               i++
+            }
+         }
+         if(select3check.value != "none"){
+            var i = 0;
+            while( i<list.length ){
+               loadcontent = document.getElementById("al-c-"+list[i]);
+               if(loadcontent.classList != select3check.value){
+                   loadcontent = document.getElementById("c-"+list[i]);
+                   loadcontent.classList.add("c-select3-none");
+               }
+               i++;
+            }
+         }
+         RadioCheck();
+      } 
+       
+       
+      
+      function RadioCheck(){
+         var radiocheck = document.getElementsByName('q1'); 
+         var i = 0;
+         while(i<radiocheck.length){
+            if(radiocheck[i].checked == true){
+               radiocheck = radiocheck[i].value;
+            }
+            i++;
+         }
+         var element = document.getElementById("content");
+
+         if(radiocheck == "デフォルト"){
+             var i=0;
+             while(i<list.length){
+                var elementload = document.getElementById("c-"+ list[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+             localStorage.removeItem('milasaveradio');
+             
+         } 
+         else if(radiocheck == "配信順"){
+             var i=0;
+             while(i<rh.length){
+                var elementload = document.getElementById("c-"+ rh[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+             localStorage.setItem('milasaveradio',JSON.stringify('1'));
+         }
+         else if(radiocheck == "歌唱回数順"){
+             SCCheck();
+             localStorage.setItem('milasaveradio',JSON.stringify('2'));
+         }
+      }  
+      
+       
+       
+      function SCCheck(){
+            var scchecklist = new Array();
+            var num,cnt,count=1,sp1,sp2;
+            var sclist = new Array({num,cnt});
+            var splitlist = new Array({sp1,sp2});
+            var i = 0 , l = 0; 
+            while( i<list.length ){
+               loadcontent = document.getElementById("c-"+list[i]);
+               if(loadcontent.classList.contains("c-select-none") || loadcontent.classList.contains("c-select2-none") || 
+                  loadcontent.classList.contains("c-select3-none") || loadcontent.classList.contains("c-select4-none") || 
+                  loadcontent.classList.contains("c-active-none")
+               ){
+                  //console.log("none");
+               }
+               else{
+                  scchecklist[l] = list[i];
+                  var splitlist2 = loadcontent.id.split("-");
+                  splitlist[l] = {sp1:splitlist2[1],sp2:splitlist2[2]}
+                  l++;
+               }
+               i++;
+            }
+          
+            var i = 0 , l = 1 , f = 0;
+            while( l<splitlist.length ){
+                if(splitlist[i].sp1 == splitlist[l].sp1){
+                   count++;
+                }
+                else{
+                   sclist[f] = {num:splitlist[i].sp1 , cnt:count}
+                   f++;
+                   count = 1;
+                }
+                i++;
+                l++;
+            }
+            sclist[f] = {num:splitlist[i].sp1 , cnt:count}
+            sclist.sort((a, b) => b.cnt - a.cnt);
+          
+          
+            var sc = new Array();
+            var l=0 , f=0;
+            while( l<sclist.length ){
+                i = 0;
+                while( i<scchecklist.length ){
+                    loadcontent = document.getElementById("c-"+scchecklist[i]);
+                    if(loadcontent.classList.contains(sclist[l].num)){
+                        sc[f] = scchecklist[i];
+                        f++;
+                    }
+                    i++;
+                }
+                l++;
+            }
+          
+          
+             var i=0;
+             var element = document.getElementById("content");
+             while(i<sc.length){
+                var elementload = document.getElementById("c-"+ sc[i]);
+                element.insertBefore(elementload,element.children[element.lastChild]);
+                i++;
+             }
+      }
+       
+       
+       
+       
+       
+      function scrolltop(){
+         window.scroll({top: 0, behavior: 'smooth'});
+      };  
+       
+      function scrollunder(){
+         var element = document.documentElement;
+         var bottom = element.scrollHeight - element.clientHeight;
+         window.scrollTo({top: bottom, left: 0, behavior: 'smooth'});
+      };   
+       
+       
+       
+      function OpenWindow(url) {
+         window.open(url,"blank","width=800,height=720,left=900,top=100");
+      } 
+       
+       
+       
+       
+   </script>
+    
+
+
+    
+</body>
+    
+    
+    
+    
+    
+</html>
